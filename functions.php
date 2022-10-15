@@ -23,3 +23,14 @@ function load_scripts(){
     wp_enqueue_script('vk-script');
 }
 add_action('wp_enqueue_scripts', 'load_scripts');
+
+// NAVIGATION
+add_theme_support('menus'); // Menus will show up in WP THEMES
+
+register_nav_menus(
+    array(
+        'Navigation' => __('Navigation Menu', 'theme'),
+        'footer-menu' => __('Footer Menu', 'theme'),
+
+    )
+);
