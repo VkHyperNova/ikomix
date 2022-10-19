@@ -2,8 +2,12 @@
 
 // STYLESHEETS
 function load_stylesheets() {
+
+    //Load BOOTSTRAP CSS
     wp_register_style('bt4', get_template_directory_uri() . '/bt4/css/bootstrap.min.css', array(), false, 'all');
     wp_enqueue_style('bt4');
+
+    // Load My Style CSS
     wp_register_style('vk-style', get_template_directory_uri() . '/style.css', array(), false, 'all');
     wp_enqueue_style('vk-style');
 }
@@ -23,6 +27,13 @@ function load_scripts(){
     wp_enqueue_script('vk-script');
 }
 add_action('wp_enqueue_scripts', 'load_scripts');
+
+// BOOTSTRAP
+function load_bootstrap(){
+    wp_register_script('bt4', get_template_directory_uri() . '/bt4/js/bootstrap.min.js', array(), false, 'all');
+    wp_enqueue_script('bt4');
+}
+add_action('wp_enqueue_scripts', 'load_bootstrap');
 
 // NAVIGATION
 add_theme_support('menus'); // Menus will show up in WP THEMES
