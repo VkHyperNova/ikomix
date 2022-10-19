@@ -3,17 +3,12 @@ Theme Name: IKOMIX
 Author: VK-dev
 */
 
-body {
-    
-    height: 100000px;
+/* Reset all Margins & Padding */
+* {
+    margin: 0;
+    padding: 0;
 }
 
-header {
-    background: grey;
-   width: 100%;
-   height: 100px;
-}
+/* Navigation */
 
-.nav_css {
-    background-color: aqua;
-}
+
