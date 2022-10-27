@@ -17,7 +17,7 @@
                 <a class="navbar-brand" href="#">Ikomix Logo</a>
                 <?php
                 wp_nav_menu(array(
-                    'theme_location'    => 'Navigation',
+                    'theme_location'    => 'top-menu',
                     'depth'             => 2,
                     'container'         => 'div',
                     'container_class'   => 'collapse navbar-collapse',

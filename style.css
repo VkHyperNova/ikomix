@@ -9,6 +9,15 @@ Author: VK-dev
     padding: 0;
 }
 
-/* Navigation */
+.footer-bg {
+    background: #7d8183;
+}
 
+footer ul li a {
+    color: white;
+}
 
+footer ul li a:hover {
+    transform: scale(1.2);
+    color: aliceblue;
+}

@@ -40,7 +40,7 @@ add_theme_support('menus'); // Menus will show up in WP THEMES
 
 register_nav_menus(
     array(
-        'Navigation' => __('Navigation Menu', 'theme'),
+        'top-menu' => __('Top menu', 'theme'),
         'footer-menu' => __('Footer Menu', 'theme'),
 
     )
