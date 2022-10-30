@@ -41,7 +41,7 @@ add_theme_support('menus'); // Menus will show up in WP THEMES
 register_nav_menus(
     array(
         'top-menu' => __('Top menu', 'theme'),
-        'footer-menu' => __('Footer Menu', 'theme'),
+        /* 'footer-menu' => __('Footer Menu', 'theme'), */
 
     )
 );
@@ -54,3 +54,21 @@ function register_navwalker(){
 	require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 }
 add_action( 'after_setup_theme', 'register_navwalker' );
+
+
+/* Widgets */
+function register_widget_areas() {
+
+    register_sidebar( array(
+      'name'          => 'Koostöö partnerid',
+      'id'            => 'footer_area_partners',
+      'description'   => 'This widget area discription',
+      'before_widget' => '<section class="footer-area footer-area-partners">',
+      'after_widget'  => '</section>',
+      'before_title'  => '<h2>',
+      'after_title'   => '</h2>',
+    ));
+    
+  }
+  
+  add_action( 'widgets_init', 'register_widget_areas' );

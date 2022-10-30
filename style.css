@@ -9,15 +9,38 @@ Author: VK-dev
     padding: 0;
 }
 
+/* Avaleht */
+.front-page-content h1, h2, h3, h4, h5 {
+    text-align: center!important;
+    margin-bottom: 40px;
+}
+
+
+/* Footer */
 .footer-bg {
     background: #7d8183;
 }
 
-footer ul li a {
+
+.footer-area ul li a {
     color: white;
 }
 
-footer ul li a:hover {
+.footer-area ul li a:hover {
     transform: scale(1.2);
-    color: aliceblue;
+    color: rgb(5, 18, 29);
 }
+
+.footer-area ul li {
+    display: inline;
+}
+
+hr {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+
+
+
