@@ -3,38 +3,35 @@
 
 
 <footer class="footer-bg">
-
+    <!-- Adress, Contacts, Register -->
     <div class="container">
-        <div class="row text-center text-light py-3">
+        <div class="row">
             <div class="col-sm-4">
-                1
+                <?php dynamic_sidebar('footer_area_adress'); ?>
             </div>
             <div class="col-sm-4">
-                1
+                <?php dynamic_sidebar('footer_area_contacts'); ?>
             </div>
             <div class="col-sm-4">
-                1
+                <?php dynamic_sidebar('footer_area_register'); ?>
             </div>
         </div>
-    </div>
 
-
-
-    <hr />
-    <!-- Partners -->
-    <div class="container">
-        <div class="text-center mx-5">
+        <!-- Partners -->
+        <hr />
+        <div class="text-center">
+            <p class="partnerid-heading">Meie Partnerid</p>
             <?php dynamic_sidebar('footer_area_partners'); ?>
         </div>
-    </div>
-    <!-- Partners -->
-    <hr />
-    <!-- Copyright -->
-    <div class="text-center py-3 text-light">© 2022 Copyright:
-        <span> ikomix.ee</span>
-    </div>
-    <!-- Copyright -->
+        <hr />
 
+        <!-- Copyright -->
+        <div class="footer-copyright">
+            <span>© 2022 Copyright: ikomix.ee</span>
+            | <a href="www.vk-dev.eu">vk-dev</a>
+        </div>
+
+    </div> <!-- container end -->
 </footer>
 
 

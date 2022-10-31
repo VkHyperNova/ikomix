@@ -59,15 +59,47 @@ add_action( 'after_setup_theme', 'register_navwalker' );
 /* Widgets */
 function register_widget_areas() {
 
+    /* Partnerid */
     register_sidebar( array(
       'name'          => 'Koostöö partnerid',
       'id'            => 'footer_area_partners',
-      'description'   => 'This widget area discription',
+      'description'   => 'Partnerite nimekiri',
       'before_widget' => '<section class="footer-area footer-area-partners">',
       'after_widget'  => '</section>',
-      'before_title'  => '<h2>',
-      'after_title'   => '</h2>',
+      'before_title'  => '<h4>',
+      'after_title'   => '</h4>',
     ));
+
+    /* Kontaktid */
+    register_sidebar( array(
+        'name'          => 'Aadress',
+        'id'            => 'footer_area_adress',
+        'description'   => 'Kontaktid ja aadressid',
+        'before_widget' => '<section class="footer-area footer-area-adress">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h4>',
+        'after_title'   => '</h4>',
+      ));
+
+      register_sidebar( array(
+        'name'          => 'Kontaktid',
+        'id'            => 'footer_area_contacts',
+        'description'   => 'Kontaktid ja aadressid',
+        'before_widget' => '<section class="footer-area footer-area-contacts">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h4>',
+        'after_title'   => '</h4>',
+      ));
+
+      register_sidebar( array(
+        'name'          => 'Register',
+        'id'            => 'footer_area_register',
+        'description'   => 'Kontaktid ja aadressid',
+        'before_widget' => '<section class="footer-area footer-area-register">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h4>',
+        'after_title'   => '</h4>',
+      ));
     
   }
   
