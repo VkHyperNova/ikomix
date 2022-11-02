@@ -9,18 +9,92 @@ Author: VK-dev
     padding: 0;
 }
 
+body {
+    background-image: url('./img/bg-pattern.jpg');
+    /* Background pattern */
+    background-size: 1920px 100%;
+}
+
+
 /* Avaleht */
 
+.frontpage-section {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    padding: 2rem;
+}
 
+.bg-image {
+    background-image: url('./img/bg-frontpage.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    opacity: 0.9;
+}
+
+.bg-image-1 {
+    background-image: url('./img/bg-image-1.png');
+    height: 400px;
+    width: 500px;
+    border-radius: 2rem;
+    opacity: 0.8;
+    -ms-transform: rotate(2deg);
+    /* IE 9 */
+    transform: rotate(2deg);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.bg-image-2 {
+    background-image: url('./img/bg-image-1.png');
+    height: 400px;
+    width: 500px;
+    border-radius: 2rem;
+    opacity: 0.8;
+    -ms-transform: rotate(-2deg);
+    /* IE 9 */
+    transform: rotate(-2deg);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.bg-image-3 {
+    background-image: url('./img/bg-image-1.png');
+    height: 400px;
+    width: 500px;
+    border-radius: 2rem;
+    opacity: 0.8;
+    -ms-transform: rotate(2deg);
+    /* IE 9 */
+    transform: rotate(2deg);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+/* PAGES */
+.page-content {
+    min-height: 100vh;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+.bg-image-page {
+    background-image: url('./img/bg-frontpage.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+}
 
 /****** Footer ******/
 .footer-bg {
-    background: #7d8183;
+    /* background: #7d8183; */
+    background: rgb(240,240,240);
+    background: linear-gradient(180deg, rgba(240,240,240,1) 0%, rgba(125,129,131,0.742734593837535) 47%);
+    padding-top: 3rem;
 }
 
-/* Footer Adress, Contacts, Register */ 
+/* Footer Adress, Contacts, Register */
 .footer-area ul li a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -28,51 +102,50 @@ Author: VK-dev
     list-style-type: none;
 }
 
-.footer-area {
-    padding-top: 1rem;
+.footer-area ul li a:hover {
     color: white;
 }
 
-.footer-area ul li a:hover {
-    color: black;
-
-}
-
 /* Footer Partners */
+
 .footer-area-partners ul li {
     display: inline-block;
 }
 
 .footer-area-partners ul li a {
     padding: 5px;
-    color: white;
+    color: black;
 }
 
 .footer-area-partners ul li a:hover {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
 .partnerid-heading {
     font-weight: bold;
-    color: white;
-    margin-bottom: 0;
+    color: black;
+}
+
+hr {
+    margin-top: 0;
 }
 
 /* Footer Copyright */
 .footer-copyright {
     padding-bottom: 1rem;
     text-align: center !important;
-    color: white;
+    color: black;
 }
 
 .footer-copyright a {
     font-weight: bold;
-    color: rgb(198, 228, 198);
+    color: black;
 }
 
 .footer-copyright a:hover {
-    font-weight: bolder;
-    color: rgb(80, 209, 80);
+    font-weight: bold;
+    color: rgb(255, 0, 0);
     text-decoration: none;
 }
+

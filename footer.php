@@ -19,9 +19,13 @@
 
         <!-- Partners -->
         <hr />
-        <div class="text-center">
-            <p class="partnerid-heading">Meie Partnerid</p>
-            <?php dynamic_sidebar('footer_area_partners'); ?>
+        <div class="partnerid-box">
+            <div class="row">
+                <div class="col-2 my-auto"><p class="partnerid-heading">Meie Partnerid >></p></div>
+                <div class="col-10 my-auto"><?php dynamic_sidebar('footer_area_partners'); ?></div>
+            </div>
+            
+            
         </div>
         <hr />
 
