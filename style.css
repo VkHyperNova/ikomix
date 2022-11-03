@@ -9,10 +9,67 @@ Author: VK-dev
     padding: 0;
 }
 
+
+/* Register custom fonts */
+@font-face {
+    font-family: "Lato-Regular";
+    src: url("./Fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Lato-Black";
+    src: url("./Fonts/Lato-Black.ttf");
+}
+
+@font-face {
+    font-family: "Lato-BlackItalic";
+    src: url("./Fonts/Lato-BlackItalic.ttf");
+}
+
+@font-face {
+    font-family: "Lato-Bold";
+    src: url("./Fonts/Lato-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Lato-BoldItalic";
+    src: url("./Fonts/Lato-BoldItalic.ttf");
+}
+
+li {
+    font-family: "Lato-Bold";
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: "Lato-BlackItalic";
+}
+
+a {
+    font-family: "Lato-BoldItalic";
+}
+
+span,p {
+    font-family: "Lato-Regular";
+}
+
+.navigation-box span {
+    font-family: "Lato-Black";
+}
+
+.logo {
+    
+} 
+
+/*********************************************************/
+
 body {
     background-image: url('./img/bg-pattern.jpg');
-    /* Background pattern */
     background-size: 1920px 100%;
+}
+
+/* header */
+.navigation-box {
+    padding-top: 2rem;
 }
 
 
@@ -24,49 +81,75 @@ body {
     padding: 2rem;
 }
 
-.bg-image {
-    background-image: url('./img/bg-frontpage.png');
+.bg-frontpage-main-image {
+    background-image: url('./img/bg-frontpage-image-main.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 250px;
+    background-size: 100%;
+    height: 500px;
+    opacity: 0.8;
+    
+}
+
+.main-image-header-position {
+    padding-top: 9rem;
+
+}
+
+.main-header {
+    color: white;
+    
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 4rem;
+    text-decoration: double;
+    
+}
+
+.main-description p, .frontpage-section p {
+    padding: 20px;
+    font-size: larger;
+    line-height: 2rem;  
+}
+
+
+.bg-image-1, .bg-image-2, .bg-image-3 {
+    
+    background-size: 500px 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    width: 500px;
+    border-radius: 2rem;
     opacity: 0.9;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.bg-image-1:hover, .bg-image-2:hover, .bg-image-3:hover {
+    transform: rotate(0deg);
+    transition: 0.3s;
+    transform: scale(1.05);
 }
 
 .bg-image-1 {
-    background-image: url('./img/bg-image-1.png');
-    height: 400px;
-    width: 500px;
-    border-radius: 2rem;
-    opacity: 0.8;
-    -ms-transform: rotate(2deg);
-    /* IE 9 */
-    transform: rotate(2deg);
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-}
-
-.bg-image-2 {
-    background-image: url('./img/bg-image-1.png');
-    height: 400px;
-    width: 500px;
-    border-radius: 2rem;
-    opacity: 0.8;
+    background-image: url('./img/Paneelid.jpg');
     -ms-transform: rotate(-2deg);
     /* IE 9 */
     transform: rotate(-2deg);
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-.bg-image-3 {
-    background-image: url('./img/bg-image-1.png');
-    height: 400px;
-    width: 500px;
-    border-radius: 2rem;
-    opacity: 0.8;
+.bg-image-2 {
+    background-image: url('./img/auto.jpg');
     -ms-transform: rotate(2deg);
     /* IE 9 */
     transform: rotate(2deg);
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.bg-image-3 {
+    background-image: url('./img/pesumasinad.jpg');
+    -ms-transform: rotate(-2deg);
+    /* IE 9 */
+    transform: rotate(-2deg);
 }
 
 /* PAGES */
@@ -87,8 +170,8 @@ body {
 /****** Footer ******/
 .footer-bg {
     /* background: #7d8183; */
-    background: rgb(240,240,240);
-    background: linear-gradient(180deg, rgba(240,240,240,1) 0%, rgba(125,129,131,0.742734593837535) 47%);
+    background: rgb(125, 129, 131);
+    background: linear-gradient(180deg, rgba(125, 129, 131, 0.1) 0%, rgba(125, 129, 131, 1) 100%);
     padding-top: 3rem;
 }
 
@@ -123,12 +206,24 @@ body {
 }
 
 .partnerid-heading {
-    font-weight: bold;
     color: black;
 }
 
 hr {
     margin-top: 0;
+}
+
+.img-euroopaliit {
+   width: 50px;
+   height: 40px;
+   transition: 0.1s;
+   margin-right: 0.5rem;
+}  
+
+.img-euroopaliit:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+    border: 1px blue solid;
 }
 
 /* Footer Copyright */
@@ -148,4 +243,3 @@ hr {
     color: rgb(255, 0, 0);
     text-decoration: none;
 }
-
