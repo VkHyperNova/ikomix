@@ -7,18 +7,18 @@
 
 <body <?php body_class(); ?>>
 
-    <header class="navigation-box sticky-top bg-light">
+    <header class="sticky-top bg-light">
         <nav class="navbar navbar-expand-md navbar-light " role="navigation">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation', 'your-theme-slug'); ?>">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="logo">
-                    <a href="https://www.ikomix.ee">
-                        <img alt="Ikomix logo" src="<?php echo get_template_directory_uri(); ?>/img/Ikomix-logo.png">
-                    </a>
-                </div>
+
+                <a href="https://www.ikomix.ee">
+                    <img class="logo" alt="Ikomix logo" src="<?php echo get_template_directory_uri(); ?>/img/Ikomix-logo.png">
+                </a>
+
                 <?php
                 wp_nav_menu(array(
                     'theme_location'    => 'top-menu',

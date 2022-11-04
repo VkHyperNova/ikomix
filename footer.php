@@ -38,7 +38,7 @@
         <!-- Copyright -->
         <div class="footer-copyright">
             <span>© 2022 Copyright: ikomix.ee</span>
-            | <a href="www.vk-dev.eu">vk-dev</a>
+            <a href="www.vk-dev.eu" title="Theme by VK">vk-dev</a>
         </div>
 
     </div> <!-- container end -->

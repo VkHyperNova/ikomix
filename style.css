@@ -36,19 +36,23 @@ Author: VK-dev
     src: url("./Fonts/Lato-BoldItalic.ttf");
 }
 
-li {
-    font-family: "Lato-Bold";
-}
+
 
 h1,h2,h3,h4,h5 {
     font-family: "Lato-BlackItalic";
 }
 
 a {
-    font-family: "Lato-BoldItalic";
+    font-family: "Lato-Italic";
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-span,p {
+a:hover {
+    transition: 0.3s;
+}
+
+span,p,li {
     font-family: "Lato-Regular";
 }
 
@@ -57,7 +61,7 @@ span,p {
 }
 
 .logo {
-    
+    height: 80px;
 } 
 
 /*********************************************************/
@@ -67,13 +71,16 @@ body {
     background-size: 1920px 100%;
 }
 
-/* header */
-.navigation-box {
-    padding-top: 2rem;
+/* Avaleht */
+.navbar-light .navbar-nav .active>.nav-link {
+    color: black !important;
+    transform: scale(1.1);
 }
 
-
-/* Avaleht */
+.navbar-light .navbar-nav .nav-link:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
 
 .frontpage-section {
     margin-top: 7rem;
@@ -98,10 +105,8 @@ body {
 
 .main-header {
     color: white;
-    
     text-shadow: 2px 2px 4px #000000;
     font-size: 4rem;
-    text-decoration: double;
     
 }
 
@@ -234,12 +239,15 @@ hr {
 }
 
 .footer-copyright a {
+    float: right;
     font-weight: bold;
-    color: black;
+    color: rgb(170, 175, 177);
+    transition: 0.3s;
 }
 
 .footer-copyright a:hover {
-    font-weight: bold;
-    color: rgb(255, 0, 0);
+    transform: scale(0.8);
+    transition: 0.3s;
     text-decoration: none;
+    color: white;
 }
