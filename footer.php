@@ -22,7 +22,7 @@
         <div class="partnerid-box">
             <div class="row">
                 <div class="col-2 my-auto">
-                    <p class="partnerid-heading">Meie Partnerid >></p>
+                    <p class="partnerid-title">Meie Partnerid >></p>
                 </div>
                 <div class="col-8 my-auto"><?php dynamic_sidebar('footer_area_partners'); ?></div>
                 <div class="col-2 pb-3">

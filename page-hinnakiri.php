@@ -1,3 +1,4 @@
+<!-- Hinnakiri -->
 <?php get_header(); ?>
 
 <!-- Background image -->
@@ -10,6 +11,7 @@
 <!-- Content -->
 <div class="container page-content">
   <div class="description">
+    <h1>(hinnakiri poolik)</h1>
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <?php the_content(); ?>
     <?php endwhile;
