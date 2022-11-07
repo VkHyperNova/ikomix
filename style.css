@@ -12,7 +12,7 @@ Author: VK-dev
 /* Background Patterns */
 body {
     background-image: url('./img/bg-pattern.jpg');
-    background-size: 1920px 100%;
+    background-size: 100% 100%;
 }
 
 /* Register custom fonts */
@@ -84,7 +84,7 @@ a {
 
 a:hover {
     transition: 0.3s;
-    color: white;
+    text-decoration: none;
 }
 
 
@@ -210,14 +210,11 @@ li {
 }
 
 /* Kontakt */
-.card ul {
-    list-style-type: none;
-}
-
-.card {
-    background-color: #ffffff;
-    border-radius: 3rem;
-    min-height: 10rem;
+.contact-card {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background-color: rgb(255, 255, 255, 0.1);
+    min-height: 280px;
+    border-radius: 2rem;
 }
 
 .custom-center-margin {
@@ -236,6 +233,7 @@ li {
 }
 
 .footer-area-partners ul li a:hover {
+    transition: 0.3s;
     color: white;
     text-decoration: none;
 }

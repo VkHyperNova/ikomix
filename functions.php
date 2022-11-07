@@ -7,6 +7,10 @@ function load_stylesheets() {
     wp_register_style('bt4', get_template_directory_uri() . '/bt4/css/bootstrap.min.css', array(), false, 'all');
     wp_enqueue_style('bt4');
 
+    // Load Icons CSS
+    wp_register_style('icons', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css', array(), false, 'all');
+    wp_enqueue_style('icons');
+
     // Load My Style CSS
     wp_register_style('vk-style', get_template_directory_uri() . '/style.css', array(), false, 'all');
     wp_enqueue_style('vk-style');
