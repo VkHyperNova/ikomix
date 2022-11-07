@@ -15,7 +15,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <a href="https://www.ikomix.ee">
+                <a href="http://www.ikomix.ee">
                     <img class="logo" alt="Ikomix logo" src="<?php echo get_template_directory_uri(); ?>/img/Ikomix-logo.png">
                 </a>
 

@@ -137,15 +137,11 @@ li {
 }
 
 .description {
-    padding: 20px;
-    font-size: larger;
+    font-size: large;
     line-height: 2rem;
 }
 
-
-.bg-image-1,
-.bg-image-2,
-.bg-image-3 {
+.fp-image {
     background-size: 500px 400px;
     background-repeat: no-repeat;
     background-position: center;
@@ -155,36 +151,28 @@ li {
     opacity: 0.9;
     transition: 0.3s;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
 }
 
-.bg-image-1:hover,
-.bg-image-2:hover,
-.bg-image-3:hover {
+.fp-image:hover {
     transform: rotate(0deg);
     transition: 0.3s;
     transform: scale(1.05);
 }
 
-.bg-image-1 {
-    background-image: url('./img/Paneelid.jpg');
+.image-rotate-left {
     -ms-transform: rotate(-2deg);
     /* IE 9 */
     transform: rotate(-2deg);
+
 }
 
-.bg-image-2 {
-    background-image: url('./img/auto.jpg');
+.image-rotate-right {
     -ms-transform: rotate(2deg);
     /* IE 9 */
     transform: rotate(2deg);
 }
 
-.bg-image-3 {
-    background-image: url('./img/pesumasinad.jpg');
-    -ms-transform: rotate(-2deg);
-    /* IE 9 */
-    transform: rotate(-2deg);
-}
 
 /* PAGES */
 .page-content {
@@ -194,7 +182,7 @@ li {
 }
 
 .page-title {
-    color: #35629b;
+    color: #ffffff;
 }
 
 .page-image {
@@ -221,7 +209,20 @@ li {
     list-style-type: none;
 }
 
+/* Kontakt */
+.card ul {
+    list-style-type: none;
+}
 
+.card {
+    background-color: #ffffff;
+    border-radius: 3rem;
+    min-height: 10rem;
+}
+
+.custom-center-margin {
+    margin: 0 auto;
+}
 
 /* Footer Partners */
 
