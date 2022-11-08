@@ -23,9 +23,10 @@
 
     <!-- Aadress -->
     <div class="col-sm-4">
+    
       <div class="contact-card">
         <div class="px-5 py-5">
-          <i class="fa-solid fa-house fa-2xl"></i>
+          <i class="fa-solid fa-house"></i>
         </div>
         <div class="pb-5">
           <?php dynamic_sidebar('footer_area_adress'); ?>
@@ -37,7 +38,7 @@
     <div class="col-sm-4">
       <div class="contact-card">
         <div class="px-5 py-5">
-          <i class="fas fa-phone-square-alt fa-2xl"></i>
+          <i class="fas fa-phone-square-alt"></i>
         </div>
         <div class="pb-5">
           <?php dynamic_sidebar('footer_area_contacts'); ?>
@@ -49,7 +50,7 @@
     <div class="col-sm-4">
       <div class="contact-card">
         <div class="px-5 py-5">
-          <i class="fas fa-address-card fa-2xl"></i>
+          <i class="fas fa-address-card"></i>
         </div>
         <div class="pb-5">
           <?php dynamic_sidebar('footer_area_register'); ?>

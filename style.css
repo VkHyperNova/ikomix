@@ -7,7 +7,11 @@ Author: VK-dev
 * {
     margin: 0;
     padding: 0;
+    --ikomix-blue-color: rgba(53, 98, 155);
+    --ikomix-grey-color: rgb(125, 129, 131);
 }
+
+
 
 /* Background Patterns */
 body {
@@ -114,26 +118,38 @@ li {
     transition: 0.3s;
 }
 
+.nav-bg {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
 .logo {
     height: 80px;
 }
 
 /* Ikomix Image and Title */
-.main-image {
-    background-image: url('./img/bg-frontpage-image-main.png');
+.main-image, .page-image {
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
-    height: 500px;
+    background-size: cover;
+    height: 400px;
     opacity: 0.8;
+    
+}
+
+.main-image {
+    background-image: url('./img/bg-frontpage-image-main.png');
+}
+
+.page-image {
+    background-image: url('./img/page-taust.jpg');
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .main-image-title {
-    color: #35629b;
+    color: white;
     font-size: 4rem;
-    transform: rotate(-1.5deg);
-    padding-top: 1rem;
-    text-shadow: 0px 0px 2px #35629b;
+    padding-top: 6rem;
+    text-shadow: 0px 0px 2px white;
 }
 
 .description {
@@ -173,8 +189,6 @@ li {
     transform: rotate(2deg);
 }
 
-
-/* PAGES */
 .page-content {
     min-height: 50vh;
     margin-top: 7rem;
@@ -182,19 +196,13 @@ li {
 }
 
 .page-title {
-    color: #ffffff;
+    color: white;
+    font-size: 4rem;
+    text-shadow: 0px 0px 2px white;
+    padding-top: 4rem;
 }
 
-.page-image {
-    /* background-image: url('./img/bg-frontpage-image-main.png'); */
 
-    background: rgb(125, 129, 131);
-    background: linear-gradient(90deg, rgba(125, 129, 131, 0.5998774509803921) 0%, rgba(125, 129, 131, 1) 50%, rgba(125, 129, 131, 0.5998774509803921) 100%);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 250px;
-}
 
 /****** Footer ******/
 .footer-bg {
@@ -217,9 +225,14 @@ li {
     border-radius: 2rem;
 }
 
-.custom-center-margin {
-    margin: 0 auto;
+.fa-house, .fa-phone-square-alt, .fa-address-card {
+    color: rgba(53,98,155, 0.8);
+    font-size: 2.5rem;
+    line-height: 0;
+    vertical-align: middle;
 }
+
+
 
 /* Footer Partners */
 
@@ -271,4 +284,9 @@ hr {
     transition: 0.3s;
     text-decoration: none;
     color: white;
+}
+
+/* Custom classes */
+.custom-center-margin {
+    margin: 0 auto;
 }

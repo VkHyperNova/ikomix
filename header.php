@@ -7,7 +7,7 @@
 
 <body <?php body_class(); ?>>
 
-    <header class="sticky-top bg-light">
+    <header class="sticky-top nav-bg">
         <nav class="navbar navbar-expand-md navbar-light " role="navigation">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
