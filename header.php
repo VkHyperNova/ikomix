@@ -16,7 +16,7 @@
                 </button>
 
                 <a href="http://www.ikomix.ee">
-                    <img class="logo" alt="Ikomix logo" src="<?php echo get_template_directory_uri(); ?>/img/Ikomix-logo.png">
+                    <img class="logo" alt="Ikomix logo" src="<?php echo get_template_directory_uri(); ?>/img/ikomix-logo.png">
                 </a>
 
                 <?php
@@ -34,3 +34,10 @@
             </div>
         </nav>
     </header>
+
+    <!-- Background image -->
+    <div class="page-image p-5 text-center shadow-1-strong text-white">
+        <div class="container">   
+            <h1 class="page-title text-center"><?php the_field('lehe_pealkiri'); ?></h1>
+        </div>
+    </div>

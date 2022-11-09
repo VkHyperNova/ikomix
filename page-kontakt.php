@@ -2,12 +2,7 @@
 
 <?php get_header(); ?>
 
-<!-- Background image -->
-<div class="page-image p-5 text-center shadow-1-strong text-white">
-  <div class="container">
-    <h1 class="page-title my-5"><?php the_title(); ?></h1>
-  </div>
-</div>
+
 
 <!-- Content -->
 <div class="container page-content">
@@ -23,7 +18,7 @@
 
     <!-- Aadress -->
     <div class="col-sm-4">
-    
+
       <div class="contact-card">
         <div class="px-5 py-5">
           <i class="fa-solid fa-house"></i>
@@ -56,6 +51,30 @@
           <?php dynamic_sidebar('footer_area_register'); ?>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- Google Maps -->
+  <div class="mapouter">
+    <div class="gmap_canvas">
+      <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=ikomix&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+      <a href="https://fmovies-online.net">fmovies</a><br>
+      <style>
+        .mapouter {
+          position: relative;
+          text-align: right;
+          height: 500px;
+          width: 600px;
+        }
+      </style><a href="https://www.embedgooglemap.net"></a>
+      <style>
+        .gmap_canvas {
+          overflow: hidden;
+          background: none !important;
+          height: 500px;
+          width: 600px;
+        }
+      </style>
     </div>
   </div>
 

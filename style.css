@@ -70,7 +70,7 @@ body {
     src: url("./Fonts/Lato-ThinItalic.ttf");
 }
 
-/* Text */
+/* Text Settings*/
 h1,
 h2,
 h3,
@@ -97,10 +97,7 @@ li {
     font-family: "Lato-Regular";
 }
 
-
-/* END */
-
-/* Navbar and Logo */
+/* Header */
 .navbar-light .navbar-nav .nav-link {
     color: #35629b;
     transition: 0.3s;
@@ -126,17 +123,17 @@ li {
     height: 80px;
 }
 
-/* Ikomix Image and Title */
-.main-image, .page-image {
+/* Page Image and Title */
+.frontpage-image-cover, .page-image {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
+    height: 500px;
     opacity: 0.8;
     
 }
 
-.main-image {
+.frontpage-image-cover {
     background-image: url('./img/bg-frontpage-image-main.png');
 }
 
@@ -145,11 +142,11 @@ li {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-.main-image-title {
+.frontpage-image-title {
     color: white;
     font-size: 4rem;
     padding-top: 6rem;
-    text-shadow: 0px 0px 2px white;
+    text-shadow: 0px 0px 4px white;
 }
 
 .description {
@@ -157,7 +154,7 @@ li {
     line-height: 2rem;
 }
 
-.fp-image {
+.frontpage-image-small {
     background-size: 500px 400px;
     background-repeat: no-repeat;
     background-position: center;
@@ -170,7 +167,7 @@ li {
 
 }
 
-.fp-image:hover {
+.frontpage-image-small:hover {
     transform: rotate(0deg);
     transition: 0.3s;
     transform: scale(1.05);
@@ -198,9 +195,14 @@ li {
 .page-title {
     color: white;
     font-size: 4rem;
-    text-shadow: 0px 0px 2px white;
-    padding-top: 4rem;
+    text-shadow: 0px 0px 4px white; 
+    padding-top: 6rem;
+    
 }
+
+/* .page-title-bg {
+    background-color: #35629b;
+} */
 
 
 
@@ -235,7 +237,6 @@ li {
 
 
 /* Footer Partners */
-
 .footer-area-partners ul li {
     display: inline-block;
 }

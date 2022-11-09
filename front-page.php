@@ -1,34 +1,24 @@
 <?php get_header(); ?>
 
 <!-- Avaleht -->
-<!-- Background image -->
-<div class="main-image">
-  <div class="container ">
-    <h1 class="text-center text-uppercase main-image-title">Valgjärve Pesumaja</h1>
-  </div>
 
-
-</div>
 <div class="page-content">
   <div class="container">
 
-    <!-- User Posts -->
-
+    <!-- Section Meist -->
     <div class="my-5">
-      <h1 class="text-center">Meist</h1>
+      <h1 class="text-center"><?php the_field('firma_kirjelduse_pealkiri'); ?></h1>
       <div class="description">
-        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <?php the_content(); ?>
-        <?php endwhile;
-        endif; ?>
+        <p><?php the_field('firma_kirjeldus'); ?></p>
       </div>
     </div>
+
 
 
     <!-- Section 1 -->
     <div class="row my-5 py-5">
       <div class="col-6">
-        <img class="fp-image image-rotate-left" src="<?php the_field('pilt-1'); ?>" alt="" />
+        <img class="frontpage-image-small image-rotate-left" src="<?php the_field('pilt-1'); ?>" alt="" />
       </div>
       <div class="col-6 my-auto px-5">
         <!-- <h1>Säästlik mõtlemine!</h1> -->
@@ -51,7 +41,7 @@
         </div>
       </div>
       <div class="col-6">
-        <img class="fp-image image-rotate-right" src="<?php the_field('pilt-2'); ?>" alt="" />
+        <img class="frontpage-image-small image-rotate-right" src="<?php the_field('pilt-2'); ?>" alt="" />
       </div>
     </div>
 
@@ -59,7 +49,7 @@
     <!-- Section 3 -->
     <div class="row my-5 py-5">
       <div class="col-6">
-        <img class="fp-image image-rotate-left" src="<?php the_field('pilt-3'); ?>" alt="" />
+        <img class="frontpage-image-small image-rotate-left" src="<?php the_field('pilt-3'); ?>" alt="" />
       </div>
       <div class="col-6 my-auto px-5">
         <!-- <h1>Kalandriga triikimine!</h1> -->
@@ -83,22 +73,32 @@
         </div>
       </div>
       <div class="col-6">
-        <img class="fp-image image-rotate-right" src="<?php the_field('pilt-4'); ?>" alt="" />
+        <img class="frontpage-image-small image-rotate-right" src="<?php the_field('pilt-4'); ?>" alt="" />
       </div>
     </div>
 
     <!-- Section 5 -->
     <div class="row my-5 py-5">
       <div class="col-6">
-      <img class="fp-image image-rotate-left" src="<?php the_field('pilt-5'); ?>" alt="" />
+        <img class="frontpage-image-small image-rotate-left" src="<?php the_field('pilt-5'); ?>" alt="" />
       </div>
       <div class="col-6 my-auto px-5">
         <!-- <h1>Paindlik Teenindus!</h1> -->
         <h1><?php the_field('pilt-5-pealkiri'); ?></h1>
         <div class="description">
-         <!--  <p>Kiire ja kvaliteetne transport.</p> -->
-         <p><?php the_field('pilt-5-kirjeldus'); ?></p>
+          <!--  <p>Kiire ja kvaliteetne transport.</p> -->
+          <p><?php the_field('pilt-5-kirjeldus'); ?></p>
         </div>
+      </div>
+    </div>
+
+    <!-- Section Muu -->
+    <div class="my-5">
+      <div class="description">
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <?php the_content(); ?>
+        <?php endwhile;
+        endif; ?>
       </div>
     </div>
 
