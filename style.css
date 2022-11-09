@@ -124,13 +124,14 @@ li {
 }
 
 /* Page Image and Title */
-.frontpage-image-cover, .page-image {
+.frontpage-image-cover,
+.page-image {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
     opacity: 0.8;
-    
+
 }
 
 .frontpage-image-cover {
@@ -195,15 +196,51 @@ li {
 .page-title {
     color: white;
     font-size: 4rem;
-    text-shadow: 0px 0px 4px white; 
+    text-shadow: 0px 0px 4px white;
     padding-top: 6rem;
-    
+
 }
 
-/* .page-title-bg {
-    background-color: #35629b;
-} */
+.box {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    min-height: 280px;
+    border-radius: 2rem;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.6502976190476191) 0%, rgba(255, 255, 255, 0.6530987394957983) 50%, rgba(255, 255, 255, 0.6530987394957983) 100%);
+}
 
+/* Google maps */
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 500px;
+    width: 1100px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 1100px;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.btn {
+    color: white !important;
+    background-color: var(--ikomix-blue-color);
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.btn:active {
+    transform: scale(0.95);
+    transition: 0.3s;
+}
 
 
 /****** Footer ******/
@@ -220,15 +257,10 @@ li {
 }
 
 /* Kontakt */
-.contact-card {
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    background-color: rgb(255, 255, 255, 0.1);
-    min-height: 280px;
-    border-radius: 2rem;
-}
-
-.fa-house, .fa-phone-square-alt, .fa-address-card {
-    color: rgba(53,98,155, 0.8);
+.fa-house,
+.fa-phone-square-alt,
+.fa-address-card {
+    color: rgba(53, 98, 155, 0.8);
     font-size: 2.5rem;
     line-height: 0;
     vertical-align: middle;
