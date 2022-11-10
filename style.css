@@ -266,6 +266,70 @@ li {
     vertical-align: middle;
 }
 
+/* Hinnakiri */
+table,
+th,
+td {
+    border: 1px solid black;
+    font-size: 1.5rem;
+
+}
+
+table {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate !important;
+    border-radius: 2rem;
+    border-spacing: 0;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+th {
+    height: 70px;
+    text-align: center;
+}
+
+td {
+    padding: 2rem;
+    text-align: left;
+}
+
+td:nth-child(2) {
+    text-align: center;
+}
+
+
+tr:hover {
+    background-color: rgba(53, 98, 155, 0.3);
+}
+
+table th:first-child {
+    -moz-border-radius: 2rem 0 0 0;
+    -webkit-border-radius: 2rem 0 0 0;
+    border-radius: 2rem 0 0 0;
+}
+
+table th:last-child {
+    -moz-border-radius: 0 2rem 0 0;
+    -webkit-border-radius: 0 2rem 0 0;
+    border-radius: 0 2rem 0 0;
+}
+
+table tr:last-child td:first-child {
+    -moz-border-radius: 0 0 0 2rem;
+    -webkit-border-radius: 0 0 0 2rem;
+    border-radius: 0 0 0 2rem;
+}
+
+table tr:last-child td:last-child {
+    -moz-border-radius: 0 0 2rem 0;
+    -webkit-border-radius: 0 0 2rem 0;
+    border-radius: 0 0 2rem 0;
+}
+
+
+
 
 
 /* Footer Partners */
