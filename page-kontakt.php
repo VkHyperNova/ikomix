@@ -42,7 +42,7 @@
 
     <!-- Reg -->
     <div class="col-sm-4">
-      <div class="box">
+      <div class="box" style="min-height: 280px;">
         <div class="px-5 py-5">
           <i class="fas fa-address-card"></i>
         </div>

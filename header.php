@@ -37,7 +37,15 @@
 
     <!-- Background image -->
     <div class="page-image p-5 text-center shadow-1-strong text-white">
-        <div class="container">   
+        <div class="container">
             <h1 class="page-title text-center"><?php the_field('lehe_pealkiri'); ?></h1>
+            <div class="page-desc">
+                <h2 class="text-uppercase text-left"><?php the_field('huud_lause_1'); ?></h2>
+                <h2 class="text-uppercase"><?php the_field('huud_lause_2'); ?></h2>
+                <h2 class="text-uppercase text-right"><?php the_field('huud_lause_3'); ?></h2>
+            </div>
+
+
+
         </div>
     </div>

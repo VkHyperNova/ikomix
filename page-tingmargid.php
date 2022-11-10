@@ -1,4 +1,4 @@
-<!-- Teenused -->
+<!-- Tingmärgid -->
 <?php get_header(); ?>
 
 <!-- Content -->
