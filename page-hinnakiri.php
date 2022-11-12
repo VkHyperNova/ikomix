@@ -36,9 +36,11 @@
     echo '</tbody>';
     echo '</table>';
   } ?>
-  <div class="my-5 p-2 text-center">
+
+  <div class="mt-5 p-2 text-center">
     <h5><?php the_field('tabeli_lisa_text'); ?></h5>
   </div>
+
 
 
 

@@ -7,18 +7,13 @@
 <!-- Content -->
 <div class="container page-content">
 
-  <div class="description">
-    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <?php the_content(); ?>
-    <?php endwhile;
-    endif; ?>
-  </div>
+  
 
   <div class="row text-center">
 
     <!-- Aadress -->
     <div class="col-sm-4">
-      <div class="box">
+      <div class="box-card">
         <div class="px-5 py-5">
           <i class="fa-solid fa-house"></i>
         </div>
@@ -30,7 +25,7 @@
 
     <!-- Phone -->
     <div class="col-sm-4">
-      <div class="box">
+      <div class="box-card">
         <div class="px-5 py-5">
           <i class="fas fa-phone-square-alt"></i>
         </div>
@@ -42,7 +37,7 @@
 
     <!-- Reg -->
     <div class="col-sm-4">
-      <div class="box" style="min-height: 280px;">
+      <div class="box-card" style="min-height: 280px;">
         <div class="px-5 py-5">
           <i class="fas fa-address-card"></i>
         </div>
@@ -58,7 +53,7 @@
     <h2 class="h1-responsive font-weight-bold text-center my-4">Küsi Hinnapakkumist!</h2>
     <div class="row">
         <div class="col-md-9 mb-md-0 mb-5 custom-center-margin">
-        <div class="box">
+        <div class="box-text">
             <form id="contact-form" name="contact-form" action="mail.php" method="POST">
                 <div class="row pt-5 px-4">
                     <div class="col-md-6">
@@ -110,7 +105,15 @@
     </div>
 
   </div>
-  <img class="box" width="1100px" alt="Ikomix" src="<?php echo get_template_directory_uri(); ?>/img/ikomix-maja.jpg">
+  <img class="box-image" width="1100px" alt="Ikomix" src="<?php echo get_template_directory_uri(); ?>/img/ikomix-maja.jpg">
+
+
+  <div class="description">
+    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+        <?php the_content(); ?>
+    <?php endwhile;
+    endif; ?>
+  </div>
 
 </div>
 
