@@ -6,9 +6,10 @@
 
 
   <!-- Table -->
+  
   <?php $table = get_field('hinnakirja_tabel');
   if (!empty($table)) {
-    echo '<table>';
+    echo '<table class="box-image">';
     if (!empty($table['caption'])) {
       echo '<caption>' . $table['caption'] . '</caption>';
     }
@@ -36,6 +37,8 @@
     echo '</tbody>';
     echo '</table>';
   } ?>
+
+
 
   <div class="mt-5 p-2 text-center">
     <h5><?php the_field('tabeli_lisa_text'); ?></h5>
