@@ -135,20 +135,10 @@ li {
 
 }
 
-.frontpage-image-cover {
-    background-image: url('./img/bg-frontpage-image-main.png');
-}
-
 .page-image {
     background-image: url('./img/page-taust.jpg');
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-}
 
-.frontpage-image-title {
-    color: white;
-    font-size: 4rem;
-    padding-top: 6rem;
-    text-shadow: 0px 0px 4px white;
 }
 
 .description {
@@ -196,14 +186,16 @@ li {
 
 .page-title {
     color: white;
-    font-size: 4rem;
-    text-shadow: 0px 0px 4px white;
-    padding-top: 6rem;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 5px gray;
+   -webkit-text-stroke: 1px black;
 }
 
 .page-desc {
-    text-shadow: 0px 0px 4px white;
-    padding-top: 3rem;
+    color: white;
+    text-shadow: 3px 3px 20px white, 3px 3px 0px black;
+    padding-top: 8rem;
+    -webkit-text-stroke: 0.5px black;
 }
 
 .box-text, .box, .box-image, .box-card {
