@@ -103,28 +103,28 @@ li {
 .navbar-light .navbar-nav .nav-link {
     position: relative;
     color: var(--ikomix-blue-color);
-    text-decoration: none;
-    font-size: large;
-    transition: 0.25s;
-    
+    font-size: large;   
 }
 
 .navbar-light .navbar-nav .nav-link::after {
     content: '';
     position: absolute;
-    width: 100%;
     transform: scaleX(0);
     height: 2px;
     bottom: 0;
-    left: 0;
+    right: 0;
     background-color: var(--ikomix-blue-color);
     transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+    transition: transform 0.2s ease-out;
+    -webkit-transition: transform 0.2s ease-out;
 }
 
 .navbar-light .navbar-nav .nav-link:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+    width: 100%;
+    left: 0;
+    
 }
 
 .navbar-light .navbar-nav .active>.nav-link {
