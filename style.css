@@ -101,20 +101,41 @@ li {
 
 /* Header */
 .navbar-light .navbar-nav .nav-link {
-    color: #35629b;
-    transition: 0.3s;
+    position: relative;
+    color: var(--ikomix-blue-color);
+    text-decoration: none;
     font-size: large;
+    transition: 0.25s;
+    
+}
+
+.navbar-light .navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--ikomix-blue-color);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .navbar-light .navbar-nav .active>.nav-link {
-    color: #35629b;
+    color: var(--ikomix-blue-color);
     font-weight: bold;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
-    color: #35629b;
-    transform: scale(1.1);
-    transition: 0.3s;
+.navbar-light .navbar-nav .nav-link:hover { 
+    color: var(--ikomix-blue-color);
+    font-weight: bold;
+    transition: 0.25s;
 }
 
 .nav-bg {
@@ -156,6 +177,8 @@ li {
     opacity: 0.9;
     transition: 0.3s;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border: 1px solid black;
+
 
 }
 

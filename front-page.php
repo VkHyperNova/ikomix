@@ -7,7 +7,7 @@
 
     <!-- Section Meist -->
     <div class="box-text my-5">
-      <h1 class="text-center pt-5"><?php the_field('firma_kirjelduse_pealkiri'); ?></h1>
+      <h2 class="text-center pt-5"><?php the_field('firma_kirjelduse_pealkiri'); ?></h2>
       <div class="description px-5 pb-5 pt-2">
         <p><?php the_field('firma_kirjeldus'); ?></p>
       </div>
@@ -86,7 +86,7 @@
 
     <!-- Section Tutvustus -->
     <div class="box-text my-5">
-      <h1 class="text-center pt-5"><?php the_field('firma_tutvustus_pealkiri'); ?></h1>
+      <h2 class="text-center pt-5"><?php the_field('firma_tutvustus_pealkiri'); ?></h2>
       <div class="description px-5 pb-5 pt-2">
         <p><?php the_field('firma_tutvustus'); ?></p>
       </div>
