@@ -7,8 +7,6 @@
 <!-- Content -->
 <div class="container page-content">
 
-  
-
   <div class="row text-center">
 
     <!-- Aadress -->
@@ -50,51 +48,18 @@
 
   <!-- Email -->
   <section class="mb-4 p-5 my-5">
-    <h2 class="h1-responsive font-weight-bold text-center my-4">Küsi Hinnapakkumist!</h2>
+    <h2 class="text-center my-4">Küsi Hinnapakkumist!</h2>
     <div class="row">
-        <div class="col-md-9 mb-md-0 mb-5 custom-center-margin">
+      <div class="col-md-9 mb-md-0 mb-5 custom-center-margin">
         <div class="box-text">
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-                <div class="row pt-5 px-4">
-                    <div class="col-md-6">
-                        <div class="md-form mb-4">
-                            <input type="text" id="name" name="name" class="form-control" placeholder="Nimi">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="md-form mb-4">
-                            <input type="text" id="email" name="email" class="form-control" placeholder="Email">
-                        </div>
-                    </div>
-                </div>
-                <div class="row px-4">
-                    <div class="col-md-12">
-                        <div class="md-form mb-4">
-                            <input type="text" id="subject" name="subject" class="form-control" placeholder="Pealkiri">
-                        </div>
-                    </div>
-                </div>
-                <div class="row px-4">
-                    <div class="col-md-12">
-                        <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="10" class="form-control md-textarea" placeholder="Sõnum"></textarea>
-                        </div>
-                    </div>
-                </div>
-            </form>
-
-            <div class="text-right my-4 pb-4 px-4">
-                <a class="btn " onclick="document.getElementById('contact-form').submit();">Saada Kiri</a>
-            </div>
-            <div class="status"></div>
+          <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+              <?php the_content(); ?>
+          <?php endwhile;
+          endif; ?> 
         </div>
-        <!--Grid column-->
-        </div>
-
-
+      </div>
     </div>
-
-</section>
+  </section>
 
   <!-- Google Maps -->
   <div class="my-5">
@@ -108,12 +73,7 @@
   <img class="box-image" width="100%" alt="Ikomix" src="<?php echo get_template_directory_uri(); ?>/img/ikomix-maja.jpg">
 
 
-  <div class="description">
-    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <?php the_content(); ?>
-    <?php endwhile;
-    endif; ?>
-  </div>
+
 
 </div>
 

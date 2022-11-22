@@ -6,13 +6,13 @@
     <!-- Adress, Contacts, Register -->
     <div class="container">
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm">
                 <?php dynamic_sidebar('footer_area_adress'); ?>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm">
                 <?php dynamic_sidebar('footer_area_contacts'); ?>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm">
                 <?php dynamic_sidebar('footer_area_register'); ?>
             </div>
         </div>
