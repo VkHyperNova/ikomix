@@ -55,21 +55,26 @@
           <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <?php the_content(); ?>
           <?php endwhile;
-          endif; ?> 
+          endif; ?>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Google Maps -->
-  <div class="my-5">
-    <div class="mapouter">
-      <div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=ikomix&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+  <div class="row my-5">
+    <div class="col">
+      <img class="box-image" width="100%" height="500" alt="Ikomix" src="<?php echo get_template_directory_uri(); ?>/img/ikomix-maja.jpg">
+    </div>
+    <div class="col">
+      <div class="mapouter">
+        <div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=ikomix&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </div>
       </div>
     </div>
-
   </div>
-  <img class="box-image" width="100%" alt="Ikomix" src="<?php echo get_template_directory_uri(); ?>/img/ikomix-maja.jpg">
+
 
 
 

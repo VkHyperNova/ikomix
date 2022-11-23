@@ -9,12 +9,12 @@
     <div class="row">
 
       <div class="col-6 p-5">
-
-        <h5 class="pb-2 px-5"><?php the_field('teenused_alapealkiri'); ?></h5>
-        <div class="px-5 text-uppercase">
-          <?php the_field('teenused_nimekiri'); ?>
+        <div class="teenused-nimekiri">
+          <h5 class="pb-2 px-5"><?php the_field('teenused_alapealkiri'); ?></h5>
+          <div class="px-5 text-uppercase">
+            <?php the_field('teenused_nimekiri'); ?>
+          </div>
         </div>
-
 
       </div>
       <div class="col-6 p-5">
@@ -22,7 +22,7 @@
       </div>
 
     </div>
-    <h6 class="py-5 text-center"><?php the_field('teenused_lisaks'); ?></h6>
+    <h5 class="py-5 text-center"><?php the_field('teenused_lisaks'); ?></h5>
   </div>
 
 

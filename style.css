@@ -77,7 +77,9 @@ h2 {
     font-family: "Lato-BlackItalic";
 }
 
-h3, h4, h5 {
+h3,
+h4,
+h5 {
     font-family: "Lato-Black";
 }
 
@@ -287,6 +289,11 @@ iframe {
 ol>li::marker {
     font-weight: bold;
 }
+
+.teenused-nimekiri ul {
+    list-style-image: url('./img/list-style-image-marker-1.png');
+}
+
 
 .teenused-pilt {
     height: 300px;
