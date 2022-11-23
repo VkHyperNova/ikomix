@@ -48,10 +48,10 @@
 
   <!-- Email -->
   <section class="mb-4 p-5 my-5">
-    <h2 class="text-center my-4">Küsi Hinnapakkumist!</h2>
     <div class="row">
       <div class="col-md-9 mb-md-0 mb-5 custom-center-margin">
         <div class="box-text">
+          <h3 class="text-center pt-5">Kirjuta Meile!</h3>
           <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <?php the_content(); ?>
           <?php endwhile;
@@ -63,7 +63,6 @@
 
   <!-- Google Maps -->
   <div class="my-5">
-    <h2 class="pb-5 text-center">Meie Asukoht Kaardil</h2>
     <div class="mapouter">
       <div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=ikomix&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
       </div>

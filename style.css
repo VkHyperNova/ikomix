@@ -73,11 +73,12 @@ body {
 
 /* Text Settings*/
 h1,
-h2,
-h3,
-h4,
-h5 {
+h2 {
     font-family: "Lato-BlackItalic";
+}
+
+h3, h4, h5 {
+    font-family: "Lato-Black";
 }
 
 a {
@@ -103,7 +104,7 @@ li {
 .navbar-light .navbar-nav .nav-link {
     position: relative;
     color: var(--ikomix-blue-color);
-    font-size: large;   
+    font-size: large;
 }
 
 .navbar-light .navbar-nav .nav-link::after {
@@ -124,7 +125,7 @@ li {
     transform-origin: bottom left;
     width: 100%;
     left: 0;
-    
+
 }
 
 .navbar-light .navbar-nav .active>.nav-link {
@@ -132,7 +133,7 @@ li {
     font-weight: bold;
 }
 
-.navbar-light .navbar-nav .nav-link:hover { 
+.navbar-light .navbar-nav .nav-link:hover {
     color: var(--ikomix-blue-color);
 }
 
