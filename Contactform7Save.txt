@@ -1,26 +1,26 @@
 <div class="row px-4">
               <div class="col-md-6">
                 <div class="md-form mb-4">                  
-                 [text* text-830 class:form-control placeholder "Nimi"]
+                 [text* your-name class:form-control placeholder "Nimi"]
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="md-form mb-4">              
-                  [email* email-104 class:form-control placeholder "Email"]
+                  [email* your-email class:form-control placeholder "Email"]
                 </div>
               </div>
             </div>
             <div class="row px-4">
               <div class="col-md-12">
                 <div class="md-form mb-4">
-                  [text* text-422 class:form-control placeholder "Pealkiri"]
+                  [text* your-subject class:form-control placeholder "Pealkiri"]
                 </div>
               </div>
             </div>
             <div class="row px-4">
               <div class="col-md-12">
                 <div class="md-form">
-                  [textarea* textarea-540 id:message class:form-control class:md-textarea placeholder "Sõnum"]
+                  [textarea* your-message id:message class:form-control class:md-textarea placeholder "Sõnum"]
                 </div>
               </div>
 </div>
