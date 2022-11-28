@@ -9,7 +9,7 @@
   
   <?php $table = get_field('hinnakirja_tabel');
   if (!empty($table)) {
-    echo '<table class="box-image">';
+    echo '<table class="box-image color-ikomix-blue">';
     if (!empty($table['caption'])) {
       echo '<caption>' . $table['caption'] . '</caption>';
     }
@@ -40,7 +40,7 @@
 
 
 
-  <div class="mt-5 p-2 text-center">
+  <div class="mt-5 p-2 text-center color-green">
     <h5><?php the_field('tabeli_lisa_text'); ?></h5>
   </div>
 

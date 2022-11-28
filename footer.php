@@ -21,11 +21,11 @@
         <hr />
 
         <div class="row">
-            <div class="col-2 my-auto">
+            <div class="col my-auto">
                 <p class="partnerid-title">Meie Partnerid >></p>
             </div>
-            <div class="col-8 my-auto"><?php dynamic_sidebar('footer_area_partners'); ?></div>
-            <div class="col-2 pb-3">
+            <div class="col-8 col my-auto"><?php dynamic_sidebar('footer_area_partners'); ?></div>
+            <div class="col pb-3">
                 <img class="img-euroopaliit" alt="Toetab Euroopa Liit" title="Toetab Euroopa Liit" src="<?php echo get_template_directory_uri(); ?>/img/euroopaliit.png">
                 <img class="img-euroopaliit" alt="Eesti Riiklik Arengukava" title="Eesti Riiklik Arengukava" src="<?php echo get_template_directory_uri(); ?>/img/RAK.png">
             </div>

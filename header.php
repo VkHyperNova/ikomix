@@ -43,11 +43,11 @@
             <div class="page-desc">
                 <h2 class="text-uppercase"><?php the_field('huud_lause_2'); ?></h2>
                 <div class="row py-5">
-                    <div class="col-6">
-                        <h2 class="text-uppercase text-left"><?php the_field('huud_lause_1'); ?></h2>
+                    <div class="col">
+                        <h2 class="text-uppercase "><?php the_field('huud_lause_1'); ?></h2>
                     </div>
-                    <div class="col-6">
-                        <h2 class="text-uppercase text-right"><?php the_field('huud_lause_3'); ?></h2>
+                    <div class="col">
+                        <h2 class="text-uppercase "><?php the_field('huud_lause_3'); ?></h2>
                     </div>
                 </div>
             </div>

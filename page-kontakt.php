@@ -7,7 +7,7 @@
 <!-- Content -->
 <div class="container page-content">
 
-  <div class="row text-center">
+  <div class="row text-center color-ikomix-blue">
 
     <!-- Aadress -->
     <div class="col-sm mb-5">
@@ -51,7 +51,10 @@
     <div class="row">
       <div class="col-md-9 mb-md-0 mb-5 custom-center-margin">
         <div class="box-text">
-          <h3 class="text-center pt-5">Kirjuta Meile!</h3>
+            <h3 class="px-5 pt-5 color-ikomix-blue text-center">Kirjuta Meile!</h3>
+            <hr class="hr-header mb-3">
+       
+
           <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <?php the_content(); ?>
           <?php endwhile;
