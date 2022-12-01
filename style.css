@@ -154,6 +154,7 @@ li {
     background-size: cover;
     height: 500px;
     opacity: 0.8;
+    max-width: 100%;
 
 }
 
@@ -163,12 +164,14 @@ li {
 
 }
 
-.description {
+.frontpage-description {
     font-size: large;
     line-height: 2rem;
+    margin-bottom: 3rem;
+    color: var(--ikomix-grey-color);
 }
 
-.frontpage-image-small {
+.frontpage-images {
     background-size: 500px 400px;
     background-repeat: no-repeat;
     background-position: center;
@@ -279,7 +282,7 @@ ol>li::marker {
 
 
 .teenused-pilt {
-    height: 400px;
+    height: 350px;
     width: 400px;
     border-radius: 2rem;
     opacity: 0.9;
@@ -393,7 +396,15 @@ table tr:last-child td:last-child {
 
 hr {
     margin-top: 0;
+    max-width: 100%;
 }
+
+.hr-center {
+    width:  50%;
+    margin: auto;
+}
+
+
 
 .img-euroopaliit {
     width: 50px;
@@ -446,94 +457,47 @@ hr {
     color: var(--ikomix-blue-color);
 }
 
-.subheader-small {
-    width: 220px;
-}
-
-.subheader-large {
-    width: 530px;  
-}
-
-.subheader-medium {
-    width: 300px;
-}
-
-.hr-header {
-    width: 30%;
-    margin: auto;
-}
-
-.hr-sub-header {
-    width: 70%;
-    margin: auto;
-}
-
-@media only screen and (max-width: 991px) {
-    .page-content > .col {
-        text-align: center !important;
-        margin-bottom: 3rem !important;
-    }
+.color-ikomix-grey {
+    color: var(--ikomix-grey-color);
 }
 
 
-@media only screen and (max-width: 575px) {
+
+
+
+@media only screen and (max-width: 768px) {
     .footer-bg {
         text-align: center !important;
     }
 
-    .frontpage-image-small {
-        max-width: 400px;
-        max-height: 300px;
-    }
+}
+
+@media only screen and (max-width: 540px) {
+
 
     .page-title {
-        font-size: 3rem;
+        font-size: 8vw;
+    }
+
+    .page-desc h2 {
+        font-size: 5vw !important;
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 6vw;
     }
 
-    h3 {
-        font-size: 1.25rem;
-    }
-
-    .description {
-        font-size: medium;
-    }
-
-}
-
-@media only screen and (max-width: 460px) {
-
-    .page-content > .col {
+    .frontpage-description {
+        font-size: 4vw;
         text-align: center !important;
-        margin-bottom: 3rem !important;
-    }
-    .frontpage-image-small {
-        max-width: 300px;
-        max-height: 200px;
     }
 
-    .page-title {
-        font-size: 3rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    .description {
-        font-size: medium;
+    .box-text .px-5 {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
     }
 
 
-}
 
-@media only screen and (max-width: 330px) {
-    .frontpage-image-small {
-        max-width: 200px;
-        max-height: 100px;
-    }
 
 }

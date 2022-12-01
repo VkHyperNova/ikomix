@@ -17,7 +17,7 @@
                 </button>
 
                 <a href="http://www.ikomix.ee">
-                    <img class="logo" alt="Ikomix logo" src="<?php echo get_template_directory_uri(); ?>/img/ikomix-logo.png">
+                    <img class="logo img-fluid" alt="Ikomix logo" src="<?php echo get_template_directory_uri(); ?>/img/ikomix-logo.png">
                 </a>
 
                 <?php
@@ -43,10 +43,10 @@
             <div class="page-desc">
                 <h2 class="text-uppercase"><?php the_field('huud_lause_2'); ?></h2>
                 <div class="row py-5">
-                    <div class="col">
+                    <div class="col-lg-6 col-sm-12">
                         <h2 class="text-uppercase "><?php the_field('huud_lause_1'); ?></h2>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-6 col-sm-12">
                         <h2 class="text-uppercase "><?php the_field('huud_lause_3'); ?></h2>
                     </div>
                 </div>
