@@ -296,6 +296,11 @@ ol>li::marker {
     list-style-image: url('./img/list-style-image-marker-1.png');
 }
 
+.teenused-nimekiri {
+    font-size: larger;
+    text-transform: uppercase!important;
+}
+
 
 .teenused-pilt {
     height: 350px;
