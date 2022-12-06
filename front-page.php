@@ -8,7 +8,7 @@
   <!-- CLASS EFFECT ON TEXT BOX -->
 
     <!-- Section Meist -->
-    <div class="box-text my-5">
+    <div class="glass my-5">
       <h2 class="px-5 pt-5"><?php the_field('firma_kirjelduse_pealkiri'); ?></h2>
       <hr style="width: 200px;">
       <div class="frontpage-description px-5 pb-5 pt-2">
@@ -96,7 +96,7 @@
 
 
       <!-- Section Tutvustus -->
-      <div class="box-text my-5">
+      <div class="glass my-5">
         <h2 class="pt-5 px-5"><?php the_field('firma_tutvustus_pealkiri'); ?></h2>
         <hr style="width: 250px;">
         <div class="frontpage-description px-5 pb-5 pt-2">

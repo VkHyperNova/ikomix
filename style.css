@@ -168,7 +168,7 @@ li {
     font-size: large;
     line-height: 2rem;
     margin-bottom: 3rem;
-    color: var(--ikomix-grey-color);
+    color: black;
 }
 
 .frontpage-images {
@@ -211,6 +211,7 @@ li {
 .box-card {
     border-radius: 2rem;
     background: rgb(255, 255, 255, 0.9);
+    
 }
 
 .box {
@@ -223,10 +224,25 @@ li {
 
 .box-card {
     box-shadow: rgba(53, 98, 155, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    max-width: 350px;
 }
 
 .box-image {
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    
+}
+
+.glass {
+    background: rgba(224, 217, 217, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.2px);
+    -webkit-backdrop-filter: blur(9.2px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+/* Email */
+.form-control {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Google maps */
@@ -314,65 +330,35 @@ ol>li::marker {
 }
 
 /* Hinnakiri */
-table,
-th,
-td {
-    border: 1px solid var(--ikomix-blue-color);
-    font-size: 1.5rem;
-
-}
 
 table {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     border-collapse: separate !important;
-    border-radius: 2rem;
     border-spacing: 0;
+    font-size: 1.5rem;
+    
 }
 
 th {
-    height: 70px;
-    text-align: center;
+    text-align: center;  
+    color: var(--ikomix-blue-color);
+    
 }
 
-td {
-    padding: 2rem;
-    text-align: left;
-}
 
 td:nth-child(2) {
     text-align: center;
 }
 
-
 tr:hover {
-    background-color: rgba(53, 98, 155, 0.3);
+    background-color: rgba(156, 188, 231, 0.3);
 }
 
-table th:first-child {
-    -moz-border-radius: 2rem 0 0 0;
-    -webkit-border-radius: 2rem 0 0 0;
-    border-radius: 2rem 0 0 0;
-}
 
-table th:last-child {
-    -moz-border-radius: 0 2rem 0 0;
-    -webkit-border-radius: 0 2rem 0 0;
-    border-radius: 0 2rem 0 0;
-}
 
-table tr:last-child td:first-child {
-    -moz-border-radius: 0 0 0 2rem;
-    -webkit-border-radius: 0 0 0 2rem;
-    border-radius: 0 0 0 2rem;
-}
 
-table tr:last-child td:last-child {
-    -moz-border-radius: 0 0 2rem 0;
-    -webkit-border-radius: 0 0 2rem 0;
-    border-radius: 0 0 2rem 0;
-}
 
 /* Footer Partners */
 .footer-area-partners ul li {
@@ -400,7 +386,7 @@ hr {
 }
 
 .hr-center {
-    width:  50%;
+    width: 50%;
     margin: auto;
 }
 
@@ -461,6 +447,10 @@ hr {
     color: var(--ikomix-grey-color);
 }
 
+.tingmargid-image {
+    border: 1px solid black;
+}
+
 
 
 
@@ -496,7 +486,6 @@ hr {
         padding-left: 2rem !important;
         padding-right: 2rem !important;
     }
-
 
 
 

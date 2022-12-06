@@ -6,10 +6,10 @@
 
 
   <!-- Table -->
-  
+  <div class="table-responsive glass">
   <?php $table = get_field('hinnakirja_tabel');
   if (!empty($table)) {
-    echo '<table class="box-image color-ikomix-blue">';
+    echo '<table class="table">';
     if (!empty($table['caption'])) {
       echo '<caption>' . $table['caption'] . '</caption>';
     }
@@ -38,9 +38,9 @@
     echo '</table>';
   } ?>
 
+</div>
 
-
-  <div class="mt-5 p-2 text-center color-green">
+  <div class="mt-5 p-2 text-center color-ikomix-blue">
     <h5><?php the_field('tabeli_lisa_text'); ?></h5>
   </div>
 
