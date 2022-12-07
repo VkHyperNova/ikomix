@@ -1,18 +1,12 @@
-<!-- Kontakt -->
-
 <?php get_header(); ?>
 
-
-
-<!-- Content -->
+<!-- Kontakt -->
 <div class="container page-content">
-
   <div class="row text-center color-ikomix-blue">
 
     <!-- Aadress, Phone, Register -->
     <?php $APR = array("adress", "contacts", "register"); ?>
     <?php $icons = array("fa-solid fa-house", "fas fa-phone-square-alt", "fas fa-address-card"); ?>
-
     <?php for ($x = 0; $x <= 2; $x += 1) { ?>
       <div class="col-sm-12 col-lg-4 mb-5">
         <div class="glass custom-center-margin" style="min-height: 280px; max-width: 350px;">
@@ -27,6 +21,20 @@
     <?php } ?>
   </div>
   <!-- Aadress, Phone, Register END -->
+
+<!-- Google Maps -->
+<div class="row my-5">
+    <div class="col-sm-12 col-lg-6 mb-5">
+      <div class="mapouter">
+        <div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=ikomix&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-lg-6 mb-5">
+      <img style="border-radius: 1rem;" width="100%" height="500" alt="Ikomix" src="<?php echo get_template_directory_uri(); ?>/img/ikomix-maja.jpg">
+    </div>
+  </div>
+  <!-- Google Maps END -->
 
   <!-- Email -->
   <section class="p-2">
@@ -43,25 +51,6 @@
     </div>
   </section>
   <!-- Email END -->
-
-  <!-- Google Maps -->
-  <div class="row my-5">
-    <div class="col-sm-12 col-lg-6 mb-5">
-      <img class="box-image" width="100%" height="500" alt="Ikomix" src="<?php echo get_template_directory_uri(); ?>/img/ikomix-maja.jpg">
-    </div>
-    <div class="col-sm-12 col-lg-6 mb-5">
-      <div class="mapouter">
-        <div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=ikomix&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Google Maps END -->
-
-
-
-
-
 </div>
 
 

@@ -71,7 +71,6 @@ body {
     src: url("./Fonts/Lato-ThinItalic.ttf");
 }
 
-/* Text Settings*/
 h1,
 h2 {
     font-family: "Lato-BlackItalic";
@@ -102,7 +101,6 @@ li {
     font-family: "Lato-Regular";
 }
 
-/* Header */
 .navbar-light .navbar-nav .nav-link {
     position: relative;
     color: var(--ikomix-blue-color);
@@ -147,7 +145,6 @@ li {
     height: 80px;
 }
 
-/* Page Image and Title */
 .page-image {
     background-position: center;
     background-repeat: no-repeat;
@@ -184,7 +181,6 @@ li {
 
 }
 
-
 .page-content {
     min-height: 50vh;
     margin-top: 7rem;
@@ -205,33 +201,6 @@ li {
     -webkit-text-stroke: 0.5px black;
 }
 
-.box-text,
-.box,
-.box-image,
-.box-card {
-    border-radius: 2rem;
-    background: rgb(255, 255, 255, 0.9);
-    
-}
-
-.box {
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-}
-
-.box-text {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-
-.box-card {
-    box-shadow: rgba(53, 98, 155, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-    max-width: 350px;
-}
-
-.box-image {
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    
-}
-
 .glass {
     background: rgba(224, 217, 217, 0.2);
     border-radius: 16px;
@@ -239,32 +208,6 @@ li {
     backdrop-filter: blur(9.2px);
     -webkit-backdrop-filter: blur(9.2px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-}
-/* Email */
-.form-control {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-/* Google maps */
-.mapouter {
-    position: relative;
-    text-align: right;
-    height: 500px;
-    width: 100%;
-}
-
-.gmap_canvas {
-    overflow: hidden;
-    background: none !important;
-    height: 500px;
-    width: 100%;
-    border-radius: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-}
-
-iframe {
-    width: 100%;
-    height: 500px;
 }
 
 .btn {
@@ -283,24 +226,44 @@ iframe {
     transition: 0.3s;
 }
 
-/* Teenused */
+.form-control {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 500px;
+    width: 100%;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+}
+
 .teenused-nb li {
     margin-bottom: 2rem;
 }
 
 ol>li::marker {
     font-weight: bold;
+    color: var(--ikomix-blue-color);
+    
 }
 
 .teenused-nimekiri ul {
     list-style-image: url('./img/list-style-image-marker-1.png');
-}
-
-.teenused-nimekiri {
-    font-size: larger;
     text-transform: uppercase!important;
 }
-
 
 .teenused-pilt {
     height: 350px;
@@ -311,20 +274,16 @@ ol>li::marker {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-/****** Footer ******/
 .footer-bg {
-    /* background: #7d8183; */
     background: rgb(125, 129, 131);
     background: linear-gradient(180deg, rgba(125, 129, 131, 0.1) 0%, rgba(125, 129, 131, 1) 100%);
     padding-top: 3rem;
 }
 
-/* Footer Adress, Contacts, Register */
 .footer-area ul {
     list-style-type: none;
 }
 
-/* Kontakt */
 .fa-house,
 .fa-phone-square-alt,
 .fa-address-card {
@@ -334,22 +293,18 @@ ol>li::marker {
     vertical-align: middle;
 }
 
-/* Hinnakiri */
-
 table {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     border-collapse: separate !important;
     border-spacing: 0;
-    font-size: 1.5rem;
-    
+    font-size: 1.5rem;   
 }
 
 th {
     text-align: center;  
-    color: var(--ikomix-blue-color);
-    
+    color: var(--ikomix-blue-color); 
 }
 
 
@@ -361,11 +316,6 @@ tr:hover {
     background-color: rgba(156, 188, 231, 0.3);
 }
 
-
-
-
-
-/* Footer Partners */
 .footer-area-partners ul li {
     display: inline-block;
 }
@@ -395,8 +345,6 @@ hr {
     margin: auto;
 }
 
-
-
 .img-euroopaliit {
     width: 50px;
     height: 40px;
@@ -423,25 +371,12 @@ hr {
     color: white;
 }
 
-/* Custom classes */
 .custom-center-margin {
     margin: 0 auto;
 }
 
 .wpcf7 {
     padding: 2rem;
-}
-
-.color-red {
-    color: red;
-}
-
-.color-green {
-    color: green;
-}
-
-.color-beez {
-    color: #9d8b09;
 }
 
 .color-ikomix-blue {
@@ -456,20 +391,13 @@ hr {
     border: 1px solid black;
 }
 
-
-
-
-
 @media only screen and (max-width: 768px) {
     .footer-bg {
         text-align: center !important;
     }
-
 }
 
 @media only screen and (max-width: 540px) {
-
-
     .page-title {
         font-size: 8vw;
     }
@@ -485,12 +413,4 @@ hr {
     .frontpage-description {
         font-size: 4vw;
     }
-
-    .box-text .px-5 {
-        padding-left: 2rem !important;
-        padding-right: 2rem !important;
-    }
-
-
-
 }

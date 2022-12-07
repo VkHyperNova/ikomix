@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
 <!-- Avaleht -->
-
 <div class="page-content">
   <div class="container">
 
@@ -15,10 +14,9 @@
     </div>
     <!-- Section Meist END -->
 
-
     <!-- Section Pildid ja Hüüdlaused -->
     <?php for ($x = 1; $x <= 5; $x += 1) { ?>
-      <div class="row my-5 py-5 text-center">
+      <div class="row my-5 py-5">
         <div class="col-sm-12 col-md-5 col-lg-6 my-auto px-5">
           <h2 class="color-ikomix-blue"><?php the_field('pilt-' . $x . '-pealkiri'); ?></h2>
           <div class="frontpage-description">
@@ -57,6 +55,5 @@
     <!-- Section Muu END-->
   </div>
 </div>
-
 
 <?php get_footer(); ?>

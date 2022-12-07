@@ -1,9 +1,8 @@
-<!-- Hinnakiri -->
+
 <?php get_header(); ?>
 
-<!-- Content -->
+<!-- Hinnakiri -->
 <div class="container page-content">
-
 
   <!-- Table -->
   <div class="table-responsive glass">
@@ -46,15 +45,12 @@
   </div>
   <!-- Lisa END -->
 
-  <div class="description p-5">
+  <div class="description">
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <?php the_content(); ?>
     <?php endwhile;
     endif; ?>
   </div>
-
 </div>
-
-
 
 <?php get_footer(); ?>

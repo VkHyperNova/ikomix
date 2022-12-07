@@ -4,11 +4,9 @@
 <!-- Pesuteenused -->
 <div class="container page-content">
   <div class="glass mb-5 p-5">
-
     <h2 class="color-ikomix-blue"><?php the_field('teenused_pealkiri'); ?></h2>
     <hr style="width: 300px;">
     <h4 class="pt-5 text-center color-ikomix-blue"><?php the_field('teenused_alapealkiri'); ?></h4>
-
     <div class="row">
       <div class="col-md-12 col-lg-6 p-5">
         <div class="teenused-nimekiri">
@@ -18,13 +16,9 @@
       <div class="col-md-12 col-lg-6 p-5 text-center">
         <img class="teenused-pilt img-fluid" src="<?php the_field('teenused_pilt'); ?>" alt="pilt" />
       </div>
-
     </div>
-
     <hr class="my-5 hr-center">
-
-    <h5 class="text-center color-ikomix-blue"><?php the_field('teenused_lisaks'); ?></h5>
-    
+    <h5 class="text-center"><?php the_field('teenused_lisaks'); ?></h5>
   </div>
   <!-- Pesuteenused END -->
 
@@ -39,7 +33,7 @@
           <?php for ($x = 1; $x <= 7; $x += 1) { ?>
             <div class="col my-3">
               <img class="tingmargid-image" src="<?php the_sub_field('tingmargi_pilt_' . $x); ?>" alt="pilt" />
-              <p class="mt-3"><?php the_sub_field('tingmargi_kirjeldus_' . $x); ?></p>
+              <p class="mt-3"><strong><?php the_sub_field('tingmargi_kirjeldus_' . $x); ?></strong></p>
             </div>
           <?php } ?>
         </div>
@@ -54,7 +48,7 @@
           <?php for ($x = 1; $x <= 9; $x += 1) { ?>
             <div class="col my-3">
               <img class="tingmargid-image" src="<?php the_sub_field('tingmargi_pilt_' . $x); ?>" alt="pilt" />
-              <p class="mt-3"><?php the_sub_field('tingmargi_kirjeldus_' . $x); ?></p>
+              <p class="mt-3"><strong><?php the_sub_field('tingmargi_kirjeldus_' . $x); ?></strong></p>
             </div>
           <?php } ?>
         </div>
@@ -69,7 +63,7 @@
           <?php for ($x = 1; $x <= 2; $x += 1) { ?>
             <div class="col my-3">
               <img class="tingmargid-image" src="<?php the_sub_field('tingmargi_pilt_' . $x); ?>" alt="pilt" />
-              <p class="mt-3"><?php the_sub_field('tingmargi_kirjeldus_' . $x); ?></p>
+              <p class="mt-3"><strong><?php the_sub_field('tingmargi_kirjeldus_' . $x); ?></strong></p>
             </div>
           <?php } ?>
         </div>
@@ -84,7 +78,7 @@
           <?php for ($x = 1; $x <= 5; $x += 1) { ?>
             <div class="col my-3">
               <img class="tingmargid-image" src="<?php the_sub_field('tingmargi_pilt_' . $x); ?>" alt="pilt" />
-              <p class="mt-3"><?php the_sub_field('tingmargi_kirjeldus_' . $x); ?></p>
+              <p class="mt-3"><strong><?php the_sub_field('tingmargi_kirjeldus_' . $x); ?></strong></p>
             </div>
           <?php } ?>
       <?php endwhile;
@@ -110,10 +104,6 @@
     <?php endwhile;
     endif; ?>
   </div>
-
-
 </div>
-
-
 
 <?php get_footer(); ?>
