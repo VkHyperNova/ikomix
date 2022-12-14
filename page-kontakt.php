@@ -4,7 +4,7 @@
 <div class="container page-content">
   <div class="row text-center color-ikomix-blue">
 
-    <!-- Aadress, Phone, Register -->
+    <!-- APR (Aadres, Phone, Register) -->
     <?php $APR = array("adress", "contacts", "register"); ?>
     <?php $icons = array("fa-solid fa-house", "fas fa-phone-square-alt", "fas fa-address-card"); ?>
     <?php for ($x = 0; $x <= 2; $x += 1) { ?>
@@ -19,9 +19,8 @@
         </div>
       </div>
     <?php } ?>
-  </div>
-  <!-- Aadress, Phone, Register END -->
-
+  </div> <!-- APR END -->
+  
 <!-- Google Maps -->
 <div class="row my-5">
     <div class="col-sm-12 col-lg-6 mb-5">
@@ -33,8 +32,8 @@
     <div class="col-sm-12 col-lg-6 mb-5">
       <img style="border-radius: 1rem;" width="100%" height="500" alt="Ikomix" src="<?php echo get_template_directory_uri(); ?>/img/ikomix-maja.jpg">
     </div>
-  </div>
-  <!-- Google Maps END -->
+  </div> <!-- Google Maps END -->
+  
 
   <!-- Email -->
   <section class="p-2">
@@ -49,10 +48,8 @@
         </div>
       </div>
     </div>
-  </section>
-  <!-- Email END -->
-</div>
-
-
+  </section> <!-- Email END -->
+  
+</div>  <!-- Kontakt END -->
 
 <?php get_footer(); ?>

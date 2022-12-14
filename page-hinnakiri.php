@@ -1,4 +1,3 @@
-
 <?php get_header(); ?>
 
 <!-- Hinnakiri -->
@@ -45,12 +44,14 @@
   </div>
   <!-- Lisa END -->
 
+  <!-- Other WP Post -->
   <div class="description">
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <?php the_content(); ?>
     <?php endwhile;
     endif; ?>
-  </div>
-</div>
+  </div> <!-- Other WP Post END -->
+
+</div> <!-- Hinnakiri END -->
 
 <?php get_footer(); ?>

@@ -11,8 +11,8 @@
       <div class="frontpage-description px-5 pb-5 pt-2">
         <p><?php the_field('firma_kirjeldus'); ?></p>
       </div>
-    </div>
-    <!-- Section Meist END -->
+    </div> <!-- Section Meist END -->
+    
 
     <!-- Section Pildid ja Hüüdlaused -->
     <?php for ($x = 1; $x <= 5; $x += 1) { ?>
@@ -30,8 +30,8 @@
       <?php if ($x < 5) { ?>
         <hr class="hr-center">
       <?php } ?>
-    <?php } ?>
-    <!-- Section Pildid ja Hüüdlaused END -->
+    <?php } ?> <!-- Section Pildid ja Hüüdlaused END -->
+    
 
     <!-- Section Tutvustus -->
     <div class="glass my-5">
@@ -40,10 +40,10 @@
       <div class="frontpage-description px-5 pb-5 pt-2">
         <p><?php the_field('firma_tutvustus'); ?></p>
       </div>
-    </div>
-    <!-- Section Tutvustus END-->
+    </div> <!-- Section Tutvustus END-->
+    
 
-    <!-- Section Muu -->
+    <!-- Other WP Post -->
     <div class="my-5">
       <div class="frontpage-description">
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -51,9 +51,8 @@
         <?php endwhile;
         endif; ?>
       </div>
-    </div>
-    <!-- Section Muu END-->
+    </div> <!-- Other WP Post END -->
   </div>
-</div>
+</div> <!-- Avaleht  END -->
 
 <?php get_footer(); ?>
