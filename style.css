@@ -305,6 +305,7 @@ table {
 th {
     text-align: center;  
     color: var(--ikomix-blue-color); 
+    background-color: rgba(156, 188, 231, 0.3);
 }
 
 
