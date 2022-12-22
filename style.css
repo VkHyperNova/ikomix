@@ -392,6 +392,17 @@ hr {
     border: 1px solid black;
 }
 
+
+/* WP FORMS. (And added .btn class to button in wp forms page) */
+#wpforms-606 {
+	padding: 1rem 2rem !important;
+}
+
+.wpforms-container-full {
+    width: 600px !important;
+}
+
+
 @media only screen and (max-width: 768px) {
     .footer-bg {
         text-align: center !important;
